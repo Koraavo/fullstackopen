@@ -1,0 +1,19 @@
+title single-page-note-post-request
+
+browser->server: HTTP POST studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over browser:
+new note available as json data
+with content and deactivate
+content-type header informs the server 
+that data is included in json format
+end note
+server -> browser: Status: 201 Created
+note over browser:
+fetch form element and register an event handler
+event handler calls a method to prevent default handling of form submit
+event handler: 
+creates a new note, 
+adds to the list, 
+rerenders the note,
+sends to server
+end note
