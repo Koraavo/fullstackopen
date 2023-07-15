@@ -1,0 +1,24 @@
+Create a repository on github.
+steps:
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Koraavo/test.git
+git push -u origin main
+
+If you are versioning with git branch:
+Create a new branch with the name part1.3
+git checkout -b "part1.3"
+
+work on the branch.
+commit stuff
+git push --set-upstream origin part1.3
+then:
+
+git checkout main
+git merge part1.3
+
+delete the branch
+git branch -d part1.3
